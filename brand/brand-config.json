@@ -1,0 +1,91 @@
+{
+  "company": {
+    "name": "MyBambu",
+    "tagline_es": "Tu cuenta para todo",
+    "tagline_en": "Your account for everything"
+  },
+  "colors": {
+    "primary": {
+      "synthetic_spearmint": "#27FB6B",
+      "blue_black": "#00052E"
+    },
+    "secondary_blue": {
+      "midnight_mirage": "#002041",
+      "opulent_blue": "#0156F4",
+      "bluerocratic": "#206DFE",
+      "tropical_turquoise": "#01CFFB",
+      "candied_snow": "#E1FFEF"
+    },
+    "secondary_green": {
+      "black_knight": "#001219",
+      "black_stallion": "#001A20",
+      "cadmium_green": "#006A48",
+      "malachite": "#17CA60",
+      "screamin_green": "#66FF66",
+      "green_glint": "#E1F5CB"
+    },
+    "neutral": {
+      "midnight_blue": "#000312",
+      "white": "#FFFFFF"
+    }
+  },
+  "typography": {
+    "primary": {
+      "family": "IBrand",
+      "weights": ["Regular"],
+      "usage": "Headers, titles, logo text"
+    },
+    "secondary": {
+      "family": "Poppins",
+      "weights": ["Regular", "Medium", "SemiBold", "Bold"],
+      "usage": "Body text, descriptions, data"
+    },
+    "hierarchy": {
+      "h1": {
+        "font": "IBrand Regular",
+        "size": "72px"
+      },
+      "h2": {
+        "font": "IBrand Regular",
+        "size": "44.5px"
+      },
+      "h3": {
+        "font": "Poppins Medium",
+        "size": "27.5px"
+      },
+      "body": {
+        "font": "Poppins Regular",
+        "size": "17px"
+      }
+    }
+  },
+  "gradients": {
+    "primary_header": "linear-gradient(135deg, #00052E 0%, #002041 100%)",
+    "accent_green": "linear-gradient(135deg, #27FB6B 0%, #17CA60 100%)",
+    "insight_box": "linear-gradient(135deg, #27FB6B 0%, #1de05a 100%)"
+  },
+  "logo": {
+    "min_width": "115px",
+    "optimal_widths": ["300px", "186px", "115px"],
+    "exclusion_zone": "1x logo height on all sides"
+  },
+  "spacing": {
+    "section_padding": "40px",
+    "card_padding": "30px",
+    "element_gap": "20px"
+  },
+  "borders": {
+    "radius": {
+      "small": "8px",
+      "medium": "12px",
+      "large": "15px",
+      "xlarge": "20px"
+    }
+  },
+  "shadows": {
+    "card": "0 5px 20px rgba(0,0,0,0.08)",
+    "card_hover": "0 10px 30px rgba(0,0,0,0.12)",
+    "header": "0 10px 40px rgba(0,0,0,0.1)",
+    "insight": "0 5px 15px rgba(39, 251, 107, 0.2)"
+  }
+}
