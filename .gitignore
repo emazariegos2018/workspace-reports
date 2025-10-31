@@ -1,0 +1,30 @@
+# Ignore everything by default
+*
+
+# But track these specific files
+!.gitignore
+!account-opening-report.md
+!*.md
+
+# Ignore sensitive files
+*.pem
+*.key
+*_key*
+.mcp.json
+snowflake_mcp_config.yaml
+.ssh/
+.config/
+.claude*
+
+# Ignore system files
+.DS_Store
+.Trash/
+Library/
+Desktop/
+Documents/
+Downloads/
+Movies/
+Music/
+Pictures/
+Public/
+OneDrive*/
