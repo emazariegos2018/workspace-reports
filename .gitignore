@@ -5,6 +5,7 @@
 !.gitignore
 !account-opening-report.md
 !*.md
+!*.html
 
 # Ignore sensitive files
 *.pem

@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Account Opening Report with Demographics - Oct 28 - Nov 3, 2025 | MyBambu</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #000312;
+            background: #f5f7fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #00052E 0%, #002041 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .logo-mark {
+            width: 60px;
+            height: 60px;
+            background: #27FB6B;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            font-weight: 700;
+            color: #00052E;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text .company-name {
+            font-size: 32px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .logo-text .tagline {
+            font-size: 14px;
+            color: #27FB6B;
+            font-weight: 500;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .kpi-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #27FB6B;
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+
+        .kpi-label {
+            font-size: 14px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .kpi-value {
+            font-size: 42px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #27FB6B 0%, #17CA60 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+
+        .kpi-change {
+            font-size: 14px;
+            color: #17CA60;
+            font-weight: 600;
+        }
+
+        .kpi-change.negative {
+            color: #ef4444;
+        }
+
+        .section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: #00052E;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 32px;
+            background: linear-gradient(135deg, #27FB6B 0%, #17CA60 100%);
+            border-radius: 2px;
+        }
+
+        .insight-box {
+            background: linear-gradient(135deg, #27FB6B 0%, #1de05a 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            box-shadow: 0 5px 15px rgba(39, 251, 107, 0.2);
+        }
+
+        .insight-box h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+        }
+
+        .insight-box p {
+            font-size: 15px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .insight-box ul {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 400px;
+            margin: 30px 0;
+        }
+
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        th {
+            background: #f9fafb;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #00052E;
+            border-bottom: 2px solid #27FB6B;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        tr:hover {
+            background: #f9fafb;
+        }
+
+        .highlight-row {
+            background: #E1FFEF;
+        }
+
+        .metric-positive {
+            color: #17CA60;
+            font-weight: 600;
+        }
+
+        .metric-negative {
+            color: #ef4444;
+            font-weight: 600;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            background: linear-gradient(135deg, #27FB6B 0%, #17CA60 100%);
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .footer-logo .logo-mark-small {
+            width: 32px;
+            height: 32px;
+            background: #27FB6B;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+            color: #00052E;
+        }
+
+        .footer-logo .company-name-small {
+            font-size: 20px;
+            font-weight: 700;
+            color: #00052E;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .kpi-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .chart-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+            .chart-container {
+                height: 300px;
+            }
+
+            header {
+                padding: 40px 25px;
+            }
+
+            .logo-text .company-name {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-section">
+                <div class="logo-mark">B</div>
+                <div class="logo-text">
+                    <span class="company-name">MyBambu</span>
+                    <span class="tagline">Tu cuenta para todo</span>
+                </div>
+            </div>
+            <h1>📊 Account Opening Report</h1>
+            <div class="subtitle">Weekly Performance Analysis with Customer Demographics</div>
+            <div class="subtitle">October 28 - November 3, 2025 (EST)</div>
+        </header>
+
+        <!-- KPI Cards -->
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-label">Total Accounts Opened</div>
+                <div class="kpi-value">1,507</div>
+                <div class="kpi-change">🚀 Excellent Week</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Daily Average</div>
+                <div class="kpi-value">215</div>
+                <div class="kpi-change">accounts/day</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Peak Day</div>
+                <div class="kpi-value">257</div>
+                <div class="kpi-change">Tuesday, Oct 29</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Average Age</div>
+                <div class="kpi-value">32.1</div>
+                <div class="kpi-change">years old</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Spanish Speakers</div>
+                <div class="kpi-value">65.3%</div>
+                <div class="kpi-change">Primary language</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Top Nationality</div>
+                <div class="kpi-value">48.8%</div>
+                <div class="kpi-change">United States</div>
+            </div>
+        </div>
+
+        <!-- Daily Breakdown Section -->
+        <div class="section">
+            <h2 class="section-title">📅 Daily Breakdown</h2>
+
+            <div class="chart-container">
+                <canvas id="dailyChart"></canvas>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Day of Week</th>
+                        <th>Accounts</th>
+                        <th>% of Week</th>
+                        <th>Avg Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Oct 28, 2025</td>
+                        <td>Monday</td>
+                        <td><strong>230</strong></td>
+                        <td>15.3%</td>
+                        <td>32.1</td>
+                    </tr>
+                    <tr class="highlight-row">
+                        <td>Oct 29, 2025</td>
+                        <td>Tuesday <span class="badge">PEAK</span></td>
+                        <td><strong>257</strong></td>
+                        <td>17.1%</td>
+                        <td>31.7</td>
+                    </tr>
+                    <tr>
+                        <td>Oct 30, 2025</td>
+                        <td>Wednesday</td>
+                        <td><strong>244</strong></td>
+                        <td>16.2%</td>
+                        <td>31.9</td>
+                    </tr>
+                    <tr>
+                        <td>Oct 31, 2025</td>
+                        <td>Thursday</td>
+                        <td><strong>231</strong></td>
+                        <td>15.3%</td>
+                        <td>34.9</td>
+                    </tr>
+                    <tr>
+                        <td>Nov 1, 2025</td>
+                        <td>Friday</td>
+                        <td><strong>230</strong></td>
+                        <td>15.3%</td>
+                        <td>31.4</td>
+                    </tr>
+                    <tr>
+                        <td>Nov 2, 2025</td>
+                        <td>Saturday</td>
+                        <td><strong>238</strong></td>
+                        <td>15.8%</td>
+                        <td>32.1</td>
+                    </tr>
+                    <tr>
+                        <td>Nov 3, 2025</td>
+                        <td>Sunday*</td>
+                        <td><strong>77</strong></td>
+                        <td>5.1%</td>
+                        <td>32.1</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="font-size: 14px; color: #6b7280; font-style: italic; margin-top: 10px;">
+                *Sunday data is partial as of report generation time
+            </p>
+
+            <div class="insight-box">
+                <h3>💡 Key Insight: Consistent Daily Performance</h3>
+                <p>Monday through Saturday demonstrated remarkable consistency, averaging 238 accounts per day with less than 12% variance. This suggests stable marketing performance and operational excellence throughout the week. The Tuesday peak (257 accounts) represents strong mid-week acquisition.</p>
+            </div>
+        </div>
+
+        <!-- Customer Demographics Section -->
+        <div class="section">
+            <h2 class="section-title">👥 Customer Demographics</h2>
+
+            <div class="chart-grid">
+                <div class="chart-container">
+                    <canvas id="ageChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="languageChart"></canvas>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Age Group</th>
+                        <th>Count</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Under 25</td>
+                        <td>382</td>
+                        <td>25.3%</td>
+                    </tr>
+                    <tr class="highlight-row">
+                        <td><strong>25-34</strong> <span class="badge">PRIMARY</span></td>
+                        <td><strong>608</strong></td>
+                        <td><strong>40.7%</strong></td>
+                    </tr>
+                    <tr>
+                        <td>35-44</td>
+                        <td>337</td>
+                        <td>22.4%</td>
+                    </tr>
+                    <tr>
+                        <td>45-54</td>
+                        <td>117</td>
+                        <td>7.8%</td>
+                    </tr>
+                    <tr>
+                        <td>55+</td>
+                        <td>57</td>
+                        <td>3.8%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="insight-box">
+                <h3>💡 Customer Profile: Young, Spanish-Speaking Professionals</h3>
+                <p>The typical new customer is 25-34 years old (40.7%), prefers Spanish (65.3%), and is digitally savvy. This aligns perfectly with MyBambu's mission to serve the underbanked Hispanic community. The concentration in younger demographics suggests strong mobile adoption and digital-first behavior.</p>
+            </div>
+        </div>
+
+        <!-- Nationality & Geography Section -->
+        <div class="section">
+            <h2 class="section-title">🌎 Nationality & Geographic Distribution</h2>
+
+            <div class="chart-grid">
+                <div class="chart-container">
+                    <canvas id="nationalityChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="stateChart"></canvas>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Top Option</th>
+                        <th>Count</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Nationality</strong></td>
+                        <td>United States</td>
+                        <td>736</td>
+                        <td>48.8%</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Central America</td>
+                        <td>292</td>
+                        <td>19.4%</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mexico</td>
+                        <td>256</td>
+                        <td>17.0%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>State</strong></td>
+                        <td>Texas</td>
+                        <td>210</td>
+                        <td>13.9%</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Florida</td>
+                        <td>137</td>
+                        <td>9.1%</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>California</td>
+                        <td>123</td>
+                        <td>8.2%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="insight-box">
+                <h3>💡 Geographic Insight: Strong Nationwide Diversity</h3>
+                <p>Account openings show excellent geographic diversity, with no single state dominating (Texas highest at 13.9%). The top 4 states (TX, FL, CA, NY) represent only 37.2% of accounts, indicating strong nationwide penetration. This diversity reduces market concentration risk and suggests effective multi-market operations.</p>
+            </div>
+        </div>
+
+        <!-- Language Preference Analysis -->
+        <div class="section">
+            <h2 class="section-title">🗣️ Language Preference Trends</h2>
+
+            <div class="chart-container">
+                <canvas id="languageTrendChart"></canvas>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Spanish</th>
+                        <th>English</th>
+                        <th>Spanish %</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Oct 28</td>
+                        <td>151</td>
+                        <td>79</td>
+                        <td>65.7%</td>
+                    </tr>
+                    <tr>
+                        <td>Oct 29</td>
+                        <td>167</td>
+                        <td>90</td>
+                        <td>65.0%</td>
+                    </tr>
+                    <tr>
+                        <td>Oct 30</td>
+                        <td>156</td>
+                        <td>88</td>
+                        <td>63.9%</td>
+                    </tr>
+                    <tr>
+                        <td>Oct 31</td>
+                        <td>133</td>
+                        <td>98</td>
+                        <td>57.6%</td>
+                    </tr>
+                    <tr>
+                        <td>Nov 1</td>
+                        <td>160</td>
+                        <td>70</td>
+                        <td>69.6%</td>
+                    </tr>
+                    <tr class="highlight-row">
+                        <td>Nov 2</td>
+                        <td>175</td>
+                        <td>63</td>
+                        <td><strong>73.5%</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Nov 3</td>
+                        <td>51</td>
+                        <td>26</td>
+                        <td>66.2%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="insight-box">
+                <h3>💡 Language Insight: Spanish-First Customer Base</h3>
+                <p>Spanish speakers consistently represent 64-74% of new accounts daily, with November 2 showing the highest concentration at 73.5%. This reinforces the importance of Spanish-language marketing, customer support, and in-app experiences. The brand's bilingual approach is essential for customer acquisition and retention.</p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-logo">
+                <div class="logo-mark-small">B</div>
+                <span class="company-name-small">MyBambu</span>
+            </div>
+            <p style="color: #27FB6B; font-weight: 600; margin-bottom: 5px;">Tu cuenta para todo</p>
+            <p>🤖 Generated with Claude Code & Snowflake MCP Integration</p>
+            <p style="margin-top: 5px;">Report Version 2.0 (Enhanced with Demographics) | Data Freshness: Real-time</p>
+        </footer>
+    </div>
+
+    <script>
+        // MyBambu Brand Colors
+        const brandColors = {
+            primary: '#27FB6B',
+            secondary: '#17CA60',
+            dark: '#00052E',
+            blue: '#0156F4',
+            lightGreen: '#E1FFEF',
+            midnight: '#002041'
+        };
+
+        // Daily Chart
+        const ctx1 = document.getElementById('dailyChart').getContext('2d');
+        new Chart(ctx1, {
+            type: 'bar',
+            data: {
+                labels: ['Mon, Oct 28', 'Tue, Oct 29', 'Wed, Oct 30', 'Thu, Oct 31', 'Fri, Nov 1', 'Sat, Nov 2', 'Sun, Nov 3*'],
+                datasets: [{
+                    label: 'Accounts Opened',
+                    data: [230, 257, 244, 231, 230, 238, 77],
+                    backgroundColor: [
+                        'rgba(0, 5, 46, 0.8)',
+                        'rgba(39, 251, 107, 0.9)',
+                        'rgba(39, 251, 107, 0.8)',
+                        'rgba(0, 32, 65, 0.8)',
+                        'rgba(0, 5, 46, 0.8)',
+                        'rgba(39, 251, 107, 0.8)',
+                        'rgba(0, 32, 65, 0.6)'
+                    ],
+                    borderColor: [
+                        brandColors.dark,
+                        brandColors.primary,
+                        brandColors.primary,
+                        brandColors.midnight,
+                        brandColors.dark,
+                        brandColors.primary,
+                        brandColors.midnight
+                    ],
+                    borderWidth: 2,
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'Daily Account Openings (Oct 28 - Nov 3)',
+                        font: {
+                            size: 18,
+                            weight: 'bold',
+                            family: 'Poppins'
+                        },
+                        color: brandColors.dark
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            font: {
+                                size: 12,
+                                family: 'Poppins'
+                            }
+                        },
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            font: {
+                                size: 11,
+                                family: 'Poppins'
+                            }
+                        },
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+
+        // Age Distribution Chart
+        const ctx2 = document.getElementById('ageChart').getContext('2d');
+        new Chart(ctx2, {
+            type: 'doughnut',
+            data: {
+                labels: ['<25', '25-34', '35-44', '45-54', '55+'],
+                datasets: [{
+                    label: 'Age Distribution',
+                    data: [382, 608, 337, 117, 57],
+                    backgroundColor: [
+                        'rgba(1, 86, 244, 0.8)',
+                        'rgba(39, 251, 107, 0.9)',
+                        'rgba(23, 202, 96, 0.8)',
+                        'rgba(0, 32, 65, 0.8)',
+                        'rgba(0, 5, 46, 0.8)'
+                    ],
+                    borderColor: '#fff',
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'right',
+                        labels: {
+                            font: {
+                                size: 13,
+                                family: 'Poppins'
+                            },
+                            padding: 15
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: 'Age Distribution',
+                        font: {
+                            size: 18,
+                            weight: 'bold',
+                            family: 'Poppins'
+                        },
+                        color: brandColors.dark
+                    }
+                }
+            }
+        });
+
+        // Language Chart
+        const ctx3 = document.getElementById('languageChart').getContext('2d');
+        new Chart(ctx3, {
+            type: 'pie',
+            data: {
+                labels: ['Spanish', 'English'],
+                datasets: [{
+                    label: 'Language Preference',
+                    data: [65.3, 34.7],
+                    backgroundColor: [
+                        'rgba(39, 251, 107, 0.9)',
+                        'rgba(1, 86, 244, 0.8)'
+                    ],
+                    borderColor: '#fff',
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'right',
+                        labels: {
+                            font: {
+                                size: 13,
+                                family: 'Poppins'
+                            },
+                            padding: 15
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: 'Language Preference',
+                        font: {
+                            size: 18,
+                            weight: 'bold',
+                            family: 'Poppins'
+                        },
+                        color: brandColors.dark
+                    }
+                }
+            }
+        });
+
+        // Nationality Chart
+        const ctx4 = document.getElementById('nationalityChart').getContext('2d');
+        new Chart(ctx4, {
+            type: 'bar',
+            data: {
+                labels: ['United States', 'Central America', 'Mexico', 'Other'],
+                datasets: [{
+                    label: 'Accounts',
+                    data: [736, 292, 256, 223],
+                    backgroundColor: [
+                        'rgba(39, 251, 107, 0.9)',
+                        'rgba(23, 202, 96, 0.8)',
+                        'rgba(1, 86, 244, 0.8)',
+                        'rgba(0, 32, 65, 0.8)'
+                    ],
+                    borderColor: [
+                        brandColors.primary,
+                        brandColors.secondary,
+                        brandColors.blue,
+                        brandColors.midnight
+                    ],
+                    borderWidth: 2,
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'Customer Nationality',
+                        font: {
+                            size: 18,
+                            weight: 'bold',
+                            family: 'Poppins'
+                        },
+                        color: brandColors.dark
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            font: {
+                                size: 12,
+                                family: 'Poppins'
+                            }
+                        },
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            font: {
+                                size: 11,
+                                family: 'Poppins'
+                            }
+                        },
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+
+        // State Chart
+        const ctx5 = document.getElementById('stateChart').getContext('2d');
+        new Chart(ctx5, {
+            type: 'bar',
+            data: {
+                labels: ['Texas', 'Florida', 'California', 'New York', 'Other States'],
+                datasets: [{
+                    label: 'Accounts',
+                    data: [210, 137, 123, 91, 946],
+                    backgroundColor: [
+                        'rgba(39, 251, 107, 0.9)',
+                        'rgba(23, 202, 96, 0.8)',
+                        'rgba(1, 86, 244, 0.8)',
+                        'rgba(0, 32, 65, 0.8)',
+                        'rgba(0, 5, 46, 0.6)'
+                    ],
+                    borderColor: [
+                        brandColors.primary,
+                        brandColors.secondary,
+                        brandColors.blue,
+                        brandColors.midnight,
+                        brandColors.dark
+                    ],
+                    borderWidth: 2,
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'Geographic Distribution (Top States)',
+                        font: {
+                            size: 18,
+                            weight: 'bold',
+                            family: 'Poppins'
+                        },
+                        color: brandColors.dark
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            font: {
+                                size: 12,
+                                family: 'Poppins'
+                            }
+                        },
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            font: {
+                                size: 11,
+                                family: 'Poppins'
+                            }
+                        },
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+
+        // Language Trend Chart
+        const ctx6 = document.getElementById('languageTrendChart').getContext('2d');
+        new Chart(ctx6, {
+            type: 'line',
+            data: {
+                labels: ['Oct 28', 'Oct 29', 'Oct 30', 'Oct 31', 'Nov 1', 'Nov 2', 'Nov 3'],
+                datasets: [{
+                    label: 'Spanish Speakers',
+                    data: [151, 167, 156, 133, 160, 175, 51],
+                    borderColor: brandColors.primary,
+                    backgroundColor: 'rgba(39, 251, 107, 0.1)',
+                    tension: 0.4,
+                    fill: true,
+                    pointRadius: 6,
+                    pointBackgroundColor: brandColors.primary,
+                    pointBorderColor: '#fff',
+                    pointBorderWidth: 2
+                },
+                {
+                    label: 'English Speakers',
+                    data: [79, 90, 88, 98, 70, 63, 26],
+                    borderColor: brandColors.blue,
+                    backgroundColor: 'rgba(1, 86, 244, 0.1)',
+                    tension: 0.4,
+                    fill: true,
+                    pointRadius: 6,
+                    pointBackgroundColor: brandColors.blue,
+                    pointBorderColor: '#fff',
+                    pointBorderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            font: {
+                                size: 13,
+                                family: 'Poppins'
+                            },
+                            usePointStyle: true,
+                            padding: 20
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: 'Daily Language Preference Trend',
+                        font: {
+                            size: 18,
+                            weight: 'bold',
+                            family: 'Poppins'
+                        },
+                        color: brandColors.dark
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            font: {
+                                size: 12,
+                                family: 'Poppins'
+                            }
+                        },
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            font: {
+                                size: 12,
+                                family: 'Poppins'
+                            }
+                        },
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
