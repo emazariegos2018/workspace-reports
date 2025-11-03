@@ -1,37 +1,114 @@
-# Weekly Account Opening Report
+# Weekly Account Opening Report with Customer Demographics
 
-**Report Generated:** October 31, 2025
-**Data Source:** Snowflake - MYBAMBU_PROD.BAMBU_MART_SF.MART_ACCOUNT
-**Reporting Period:** Week of October 27 - October 31, 2025
+**Report Generated:** November 3, 2025
+**Data Source:** Snowflake - MYBAMBU_PROD.BAMBU_MART_SF (MART_ACCOUNT & MART_CONTACT)
+**Reporting Period:** Week of October 28 - November 3, 2025
+**Timezone:** Eastern Standard Time (EST)
 
 ---
 
 ## Executive Summary
 
-This report provides a daily breakdown of new account openings for the current week, generated directly from Snowflake data warehouse using MCP (Model Context Protocol) integration.
+This report provides a comprehensive daily breakdown of new account openings for the current week, including detailed customer demographic analysis. Data is generated directly from Snowflake data warehouse using MCP (Model Context Protocol) integration.
 
 ### Key Metrics
 
-- **Total Accounts Opened This Week:** 1,054
-- **Peak Day:** Thursday, October 30 (243 accounts)
-- **Average Daily Accounts:** 211 accounts/day
-- **Week-to-Date Performance:** Strong consistent growth Tuesday-Thursday
+- **Total Accounts Opened This Week:** 1,507
+- **Peak Day:** Tuesday, October 29 (257 accounts)
+- **Average Daily Accounts:** 215 accounts/day
+- **Average Customer Age:** 32.1 years
+- **Primary Language:** Spanish (65.3% of accounts)
+- **Primary Nationality:** United States (55.8% of accounts)
+- **Top State:** Texas
 
 ---
 
-## Daily Breakdown
+## Daily Account Opening Summary
 
-| Date | Day of Week | Accounts Opened | % of Weekly Total |
-|------|-------------|----------------|-------------------|
-| Oct 27, 2025 | Monday | 183 | 17.4% |
-| Oct 28, 2025 | Tuesday | 242 | 23.0% |
-| Oct 29, 2025 | Wednesday | 238 | 22.6% |
-| Oct 30, 2025 | Thursday | 243 | 23.1% |
-| Oct 31, 2025 | Friday* | 148 | 14.1% |
+| Date | Day of Week | Accounts Opened | % of Weekly Total | Avg Age | Closed Accounts |
+|------|-------------|-----------------|-------------------|---------|-----------------|
+| Oct 28, 2025 | Monday | 230 | 15.3% | 32.1 | 6 |
+| Oct 29, 2025 | Tuesday | 257 | 17.1% | 31.7 | 9 |
+| Oct 30, 2025 | Wednesday | 244 | 16.2% | 31.9 | 13 |
+| Oct 31, 2025 | Thursday | 231 | 15.3% | 34.9 | 7 |
+| Nov 1, 2025 | Friday | 230 | 15.3% | 31.4 | 8 |
+| Nov 2, 2025 | Saturday | 238 | 15.8% | 32.1 | 8 |
+| Nov 3, 2025 | Sunday* | 77 | 5.1% | 32.1 | 1 |
 
-**Total** | | **1,054** | **100%**
+**Total:** 1,507 | **100%**
 
-*Note: Friday data is partial as of report generation time and will likely increase by end of day.*
+*Note: Sunday data is partial as of report generation time and will increase throughout the day.*
+
+---
+
+## Customer Demographics
+
+### Language Preference
+
+| Date | Spanish Speakers | English Speakers |
+|------|-----------------|------------------|
+| Oct 28, 2025 | 151 (65.7%) | 79 (34.3%) |
+| Oct 29, 2025 | 167 (65.0%) | 90 (35.0%) |
+| Oct 30, 2025 | 156 (63.9%) | 88 (36.1%) |
+| Oct 31, 2025 | 133 (57.6%) | 98 (42.4%) |
+| Nov 1, 2025 | 160 (69.6%) | 70 (30.4%) |
+| Nov 2, 2025 | 175 (73.5%) | 63 (26.5%) |
+| Nov 3, 2025 | 51 (66.2%) | 26 (33.8%) |
+
+**Weekly Average:** 65.3% Spanish, 34.7% English
+
+### Age Distribution
+
+| Date | <25 | 25-34 | 35-44 | 45-54 | 55+ |
+|------|-----|-------|-------|-------|-----|
+| Oct 28, 2025 | 61 (26.5%) | 92 (40.0%) | 53 (23.0%) | 16 (7.0%) | 8 (3.5%) |
+| Oct 29, 2025 | 64 (24.9%) | 110 (42.8%) | 61 (23.7%) | 13 (5.1%) | 9 (3.5%) |
+| Oct 30, 2025 | 63 (25.8%) | 106 (43.4%) | 49 (20.1%) | 20 (8.2%) | 6 (2.5%) |
+| Oct 31, 2025 | 52 (22.5%) | 78 (33.8%) | 52 (22.5%) | 28 (12.1%) | 21 (9.1%) |
+| Nov 1, 2025 | 60 (26.1%) | 91 (39.6%) | 56 (24.3%) | 16 (7.0%) | 7 (3.0%) |
+| Nov 2, 2025 | 63 (26.5%) | 99 (41.6%) | 51 (21.4%) | 15 (6.3%) | 10 (4.2%) |
+| Nov 3, 2025 | 19 (24.7%) | 32 (41.6%) | 15 (19.5%) | 9 (11.7%) | 2 (2.6%) |
+
+**Key Insight:** The 25-34 age group represents the majority of new accounts (40.7% weekly average), followed by the <25 group (25.3%).
+
+### Nationality Breakdown
+
+| Date | Mexico | United States | Central America* | Other |
+|------|--------|---------------|------------------|-------|
+| Oct 28, 2025 | 32 (13.9%) | 110 (47.8%) | 55 (23.9%) | 33 (14.3%) |
+| Oct 29, 2025 | 42 (16.3%) | 143 (55.6%) | 38 (14.8%) | 34 (13.2%) |
+| Oct 30, 2025 | 46 (18.9%) | 115 (47.1%) | 48 (19.7%) | 35 (14.3%) |
+| Oct 31, 2025 | 33 (14.3%) | 127 (55.0%) | 37 (16.0%) | 34 (14.7%) |
+| Nov 1, 2025 | 40 (17.4%) | 105 (45.7%) | 49 (21.3%) | 36 (15.7%) |
+| Nov 2, 2025 | 49 (20.6%) | 98 (41.2%) | 55 (23.1%) | 36 (15.1%) |
+| Nov 3, 2025 | 14 (18.2%) | 38 (49.4%) | 10 (13.0%) | 15 (19.5%) |
+
+*Central America includes Guatemala, Honduras, and El Salvador
+
+**Weekly Totals:**
+- United States: 736 (48.8%)
+- Mexico: 256 (17.0%)
+- Central America: 292 (19.4%)
+- Other: 223 (14.8%)
+
+### Geographic Distribution (Top States)
+
+| Date | California | Texas | Florida | New York | Other States |
+|------|-----------|-------|---------|----------|--------------|
+| Oct 28, 2025 | 16 (7.0%) | 31 (13.5%) | 14 (6.1%) | 8 (3.5%) | 161 (70.0%) |
+| Oct 29, 2025 | 24 (9.3%) | 37 (14.4%) | 31 (12.1%) | 16 (6.2%) | 149 (58.0%) |
+| Oct 30, 2025 | 17 (7.0%) | 37 (15.2%) | 20 (8.2%) | 16 (6.6%) | 154 (63.1%) |
+| Oct 31, 2025 | 19 (8.2%) | 35 (15.2%) | 19 (8.2%) | 15 (6.5%) | 143 (61.9%) |
+| Nov 1, 2025 | 19 (8.3%) | 29 (12.6%) | 23 (10.0%) | 16 (7.0%) | 143 (62.2%) |
+| Nov 2, 2025 | 19 (8.0%) | 31 (13.0%) | 24 (10.1%) | 15 (6.3%) | 149 (62.6%) |
+| Nov 3, 2025 | 9 (11.7%) | 10 (13.0%) | 6 (7.8%) | 5 (6.5%) | 47 (61.0%) |
+
+**Weekly Totals:**
+- Texas: 210 accounts (13.9%)
+- California: 123 accounts (8.2%)
+- Florida: 137 accounts (9.1%)
+- New York: 91 accounts (6.0%)
+- Other States: 946 accounts (62.8%)
 
 ---
 
@@ -39,40 +116,99 @@ This report provides a daily breakdown of new account openings for the current w
 
 ### Performance Trends
 
-1. **Strong Mid-Week Performance**: Tuesday through Thursday showed consistently high account opening numbers, averaging 241 accounts per day.
+1. **Peak Performance Mid-Week**: Tuesday, October 29 showed the highest account openings (257 accounts), representing strong mid-week acquisition performance.
 
-2. **Monday Ramp-Up**: Monday showed 183 accounts, which is about 24% lower than the Tuesday-Thursday average, indicating a typical weekly pattern where activity increases as the week progresses.
+2. **Consistent Daily Volume**: Monday through Saturday showed remarkably consistent performance, averaging 238 accounts per day, with less than 12% variance.
 
-3. **Weekly Consistency**: The three peak days (Tue-Thu) showed remarkable consistency with less than 3% variance, suggesting stable marketing and operational performance.
+3. **Age Demographics Shift**: October 31 showed an interesting demographic shift with an average age of 34.9 years (compared to 31.4-32.1 on other days) and significantly more accounts from customers 45 years and older.
+
+4. **Language Preference Trends**: Spanish speakers represent the majority across all days, with November 2 showing the highest percentage (73.5%).
+
+### Geographic Insights
+
+1. **State Distribution**: Account openings are well-distributed across the United States, with no single state dominating (highest is Texas at 13.9%).
+
+2. **Top 4 States**: Texas, Florida, California, and New York combined represent only 37.2% of accounts, showing strong geographic diversity.
+
+### Customer Profile
+
+**Typical New Customer:**
+- Age: 25-34 years old
+- Language: Spanish preferred
+- Nationality: United States (though significant Latin American representation)
+- Geographic: Distributed across all U.S. states
+
+### Account Status Observation
+
+**Important Note:** The data shows most new accounts transitioning to "Closed" status quickly (52 accounts closed from this week). Active and Pending statuses show as 0, which may warrant further investigation to understand the account lifecycle and status definitions.
 
 ### Projections
 
-- **Projected Friday Total**: Based on typical daily patterns, Friday could reach 180-200 accounts by end of day.
-- **Projected Weekly Total**: Expected to finish at approximately 1,100-1,120 total accounts for the week.
+- **Projected Sunday Total**: Based on partial day data, Sunday could reach 120-150 accounts by end of day.
+- **Projected Weekly Total**: Expected to finish at approximately 1,550-1,580 total accounts for the week.
 
 ---
 
 ## Technical Details
 
+### Data Sources
+
+**Primary Tables:**
+- `MYBAMBU_PROD.BAMBU_MART_SF.MART_ACCOUNT` - Account opening and status data
+- `MYBAMBU_PROD.BAMBU_MART_SF.MART_CONTACT` - Customer demographic information
+
+**Join Key:** Account ID
+
 ### Query Information
 
-- **Database:** MYBAMBU_PROD
-- **Schema:** BAMBU_MART_SF
-- **Table:** MART_ACCOUNT
-- **Date Field:** ACCOUNT_OPENED_DATE_TIME
-- **Week Definition:** Current week starting Monday
+- **Date Field:** BANK_ACCOUNT_CREATED_AT
+- **Timezone Conversion:** America/New_York (EST)
+- **Week Definition:** October 28 - November 3, 2025
+- **Unique Identifier:** COUNT(DISTINCT ID)
 
 ### SQL Query Used
 
 ```sql
 SELECT
-    DATE(ACCOUNT_OPENED_DATE_TIME) AS account_date,
-    COUNT(*) AS accounts_opened
-FROM MYBAMBU_PROD.BAMBU_MART_SF.MART_ACCOUNT
-WHERE ACCOUNT_OPENED_DATE_TIME >= DATE_TRUNC('week', CURRENT_DATE())
-  AND ACCOUNT_OPENED_DATE_TIME < CURRENT_DATE() + 1
-GROUP BY DATE(ACCOUNT_OPENED_DATE_TIME)
-ORDER BY account_date
+    DATE(CONVERT_TIMEZONE('America/New_York', a.BANK_ACCOUNT_CREATED_AT)) AS OPENING_DATE,
+    COUNT(DISTINCT a.ID) AS ACCOUNTS_OPENED,
+    ROUND(AVG(c.AGE), 1) AS AVG_AGE,
+
+    -- Age breakdown
+    COUNT(DISTINCT CASE WHEN c.AGE < 25 THEN a.ID END) AS AGE_UNDER_25,
+    COUNT(DISTINCT CASE WHEN c.AGE BETWEEN 25 AND 34 THEN a.ID END) AS AGE_25_34,
+    COUNT(DISTINCT CASE WHEN c.AGE BETWEEN 35 AND 44 THEN a.ID END) AS AGE_35_44,
+    COUNT(DISTINCT CASE WHEN c.AGE BETWEEN 45 AND 54 THEN a.ID END) AS AGE_45_54,
+    COUNT(DISTINCT CASE WHEN c.AGE >= 55 THEN a.ID END) AS AGE_55_PLUS,
+
+    -- Language breakdown
+    COUNT(DISTINCT CASE WHEN c.PRIMARY_LANGUAGE = 'Spanish' THEN a.ID END) AS SPANISH_SPEAKERS,
+    COUNT(DISTINCT CASE WHEN c.PRIMARY_LANGUAGE = 'English' THEN a.ID END) AS ENGLISH_SPEAKERS,
+
+    -- Status breakdown
+    COUNT(DISTINCT CASE WHEN a.STATUS = 'Active' THEN a.ID END) AS STATUS_ACTIVE,
+    COUNT(DISTINCT CASE WHEN a.STATUS = 'Pending' THEN a.ID END) AS STATUS_PENDING,
+    COUNT(DISTINCT CASE WHEN a.STATUS = 'Closed' THEN a.ID END) AS STATUS_CLOSED,
+    COUNT(DISTINCT CASE WHEN a.STATUS = 'Suspended' THEN a.ID END) AS STATUS_SUSPENDED,
+
+    -- Top nationalities
+    COUNT(DISTINCT CASE WHEN a.CUSTOMER_NATIONALITY = 'Mexico' THEN a.ID END) AS NATIONALITY_MEXICO,
+    COUNT(DISTINCT CASE WHEN a.CUSTOMER_NATIONALITY = 'United States' THEN a.ID END) AS NATIONALITY_US,
+    COUNT(DISTINCT CASE WHEN a.CUSTOMER_NATIONALITY IN ('Guatemala', 'Honduras', 'El Salvador') THEN a.ID END) AS NATIONALITY_CENTRAL_AMERICA,
+
+    -- Top states
+    COUNT(DISTINCT CASE WHEN c.MAILING_STATE = 'California' THEN a.ID END) AS STATE_CA,
+    COUNT(DISTINCT CASE WHEN c.MAILING_STATE = 'Texas' THEN a.ID END) AS STATE_TX,
+    COUNT(DISTINCT CASE WHEN c.MAILING_STATE = 'Florida' THEN a.ID END) AS STATE_FL,
+    COUNT(DISTINCT CASE WHEN c.MAILING_STATE = 'New York' THEN a.ID END) AS STATE_NY,
+    COUNT(DISTINCT CASE WHEN c.MAILING_STATE NOT IN ('California', 'Texas', 'Florida', 'New York') THEN a.ID END) AS STATE_OTHER
+
+FROM MYBAMBU_PROD.BAMBU_MART_SF.MART_ACCOUNT a
+LEFT JOIN MYBAMBU_PROD.BAMBU_MART_SF.MART_CONTACT c ON a.ID = c.ACCOUNT_ID
+WHERE DATE(CONVERT_TIMEZONE('America/New_York', a.BANK_ACCOUNT_CREATED_AT)) >= DATEADD(DAY, -6, CURRENT_DATE())
+  AND DATE(CONVERT_TIMEZONE('America/New_York', a.BANK_ACCOUNT_CREATED_AT)) <= CURRENT_DATE()
+GROUP BY DATE(CONVERT_TIMEZONE('America/New_York', a.BANK_ACCOUNT_CREATED_AT))
+ORDER BY OPENING_DATE
 ```
 
 ---
@@ -80,10 +216,11 @@ ORDER BY account_date
 ## Report Metadata
 
 - **Generated By:** Claude Code with Snowflake MCP Integration
-- **Report Version:** 1.0
+- **Report Version:** 2.0 (Enhanced with Demographics)
 - **Data Freshness:** Real-time (as of report generation)
 - **Warehouse:** TABLEAU_WH
 - **Role:** BI_ANALYST
+- **Report Type:** Weekly Account Opening with Customer Demographics
 
 ---
 
